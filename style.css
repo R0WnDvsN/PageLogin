@@ -1,0 +1,152 @@
+*
+{
+    font-family: sans-serif;
+    color: white;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #585BC5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.blockDeks {
+    background-color: #1C1D21;
+    height: 507px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: -290px;
+    clip-path: polygon(0% 100%,70% 100%, 100% 0%, 0% 0%);
+    padding-right: 250px;
+
+    
+}
+
+.blockLogin {
+    background-color: #898BF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%,20% 0%);
+}
+.blockLogin{
+    box-shadow: -10px 4px 50px 10px black;
+}
+p{
+    margin-left:40px;
+    margin-top: 90px;
+    margin-bottom: 5px;
+}
+h3{
+    margin-left:40px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.h1cuy{
+    margin-left:40px;
+    margin-top:80px;
+    margin-bottom: 5px;
+}
+img
+{
+    width: 100px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #898BF0;
+    box-shadow: 0px 1px 0 0.3px white;
+}
+
+.input-group.remember-me {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+.input-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+button {
+    width: 250px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #a87cf7;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9360f7;
+}
+
+/* Resposive 400px */
+@media(max-width:400px){
+    .container{
+        display: block;
+    }
+    .blockDeks{
+        width: 125px;
+        height: 700px;
+        clip-path: polygon(0% 100%,100% 90%, 80% 0%, 0% 0%);
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    p{
+        margin-bottom: 25px;
+        margin-right: 100%;
+        margin-left: 60px;
+        width: 250px;
+    }
+    .h1cuy{
+        width: 250px;
+        margin-top: 50px;
+        padding-top: 55px;
+    }
+    h3{
+        margin-top: 30px;
+        width: 250px;
+    }
+    img{
+        width: 200px;
+    }
+    .blockLogin{
+        clip-path: polygon(0% 90%,100% 95%, 100% 0%,0% 15%);
+        margin-top: -131px;
+    }
+}
